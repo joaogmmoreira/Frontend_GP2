@@ -1,0 +1,97 @@
+:root{
+    --purple-color:#eb0918;
+    --opacity-color:#ffffff80;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-size: 1.2rem;
+
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(120, 120, 247);
+    align-items: center;
+    padding: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+
+gap: 200px;
+
+}
+header nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: red;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header nav ul li a:hover{
+    background-color: #985c60;
+}
+
+
+
+main{
+    background-color: #fbb503;
+    color: #474343;
+}
+main .sobreAnime-h2{
+    color: #f00;
+    font-size: 2rem;
+}
+main .SobreAnime{
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 50%;
+margin: auto;
+padding: 30px;
+
+}
+
+main .imagesDragonBall{
+    width: 100%;
+    height: 100%;
+}
+main .imagesDragonBall .carousel .carousel-inner .carousel-item img{
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
