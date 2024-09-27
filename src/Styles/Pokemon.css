@@ -119,7 +119,7 @@ video {
   border-radius: 30px;
   margin-bottom: 0.5rem;
   font-size: large;
-  margin: 1rem;
+  margin-right: 1rem;
 }
 
 #search-button {
@@ -136,9 +136,7 @@ video {
 #search-results {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 60%;
-  left: 40%;
+  margin-left: 30%;
   transform: translateX(-50%);
   width: 50%;
   background-color: white;
@@ -148,6 +146,15 @@ video {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-height: 200px;
   overflow-y: auto;
+}
+
+#search-results a {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 #search-results img {

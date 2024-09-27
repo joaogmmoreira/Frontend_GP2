@@ -85,8 +85,8 @@ const searchPokemon = async () => {
       pokemonImage.src = pokemonDetail.sprites.front_default;
       pokemonLink.href = `../Pages/pokemonDetails.html?name=${pokemon.name}`;
       pokemonLink.textContent = pokemon.name;
-      pokemonItem.appendChild(pokemonImage);
       pokemonItem.appendChild(pokemonLink);
+      pokemonLink.appendChild(pokemonImage);
       searchResultsElement.appendChild(pokemonItem);
     }
   } catch (error) {
