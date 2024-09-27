@@ -58,6 +58,42 @@ const setupNavigationButtons = (pokemonListData, previousButton, nextButton, pok
   }
 };
 
+const searchPokemon = async () => {
+  const searchInput = document.getElementById('search-input');
+  const searchQuery = searchInput.value.toLowerCase();
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=1000`;
+  const searchResultsElement = document.getElementById('search-results');
+
+  if (!searchQuery) {
+    searchResultsElement.innerHTML = '';
+    return;
+  }
+
+  try {
+    const data = await getPokemonDetails(url);
+    const filteredPokemon = data.results.filter(pokemon => pokemon.name.includes(searchQuery));
+
+    searchResultsElement.innerHTML = '';
+
+    for (const pokemon of filteredPokemon) {
+      const pokemonDetailResponse = await fetch(pokemon.url);
+      const pokemonDetail = await pokemonDetailResponse.json();
+
+      const pokemonItem = document.createElement('div');
+      const pokemonLink = document.createElement('a');
+      const pokemonImage = document.createElement('img');
+      pokemonImage.src = pokemonDetail.sprites.front_default;
+      pokemonLink.href = `../Pages/pokemonDetails.html?name=${pokemon.name}`;
+      pokemonLink.textContent = pokemon.name;
+      pokemonItem.appendChild(pokemonImage);
+      pokemonItem.appendChild(pokemonLink);
+      searchResultsElement.appendChild(pokemonItem);
+    }
+  } catch (error) {
+    console.error('Error fetching Pokémon data:', error);
+  }
+}
+
 window.onload = async () => {
   const url = 'https://pokeapi.co/api/v2/pokemon/?limit=20&offset=0';
   const pokemonListElement = document.getElementById('pokemon-list');
@@ -66,4 +102,13 @@ window.onload = async () => {
 
   const pokemonListData = await updatePokemonList(url, pokemonListElement);
   setupNavigationButtons(pokemonListData, previousButton, nextButton, pokemonListElement);
+  document.getElementById('search-button').addEventListener('click', searchPokemon);
+  const searchInput = document.getElementById('search-input');
+  searchInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      searchPokemon();
+    }
+  });
+
+  searchInput.focus();
 };
