@@ -1,6 +1,8 @@
 :root{
-    --purple-color:#eb0918;
-    --opacity-color:#ffffff80;
+    --primary-color:#fbb503;
+    --secondary-color:#7878f7;
+    --tertiary-color:#ff0000;
+    
     
 }
 
@@ -21,9 +23,10 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(120, 120, 247);
+    background-color: var(--secondary-color);
     align-items: center;
     padding: 20px;
+    width: 100%;
 }
 
 header nav ul {
@@ -32,7 +35,6 @@ header nav ul {
 }
 
 header nav ul li{
-
 gap: 200px;
 
 }
@@ -40,7 +42,7 @@ header nav ul li a{
     color:#fff;
     text-decoration: none;
     font-weight: bold;
-    background-color: red;
+    background-color: var(--tertiary-color);
     margin-left: 20px;
     padding: 10px;
     border-radius: 10px;
@@ -53,11 +55,12 @@ header nav ul li a:hover{
 
 
 main{
-    background-color: #fbb503;
+    background-color: var(--primary-color);
     color: #474343;
+    width: 100%;
 }
 main .sobreAnime-h2{
-    color: #f00;
+    color: var(--tertiary-color);
     font-size: 2rem;
 }
 main .SobreAnime{
@@ -81,13 +84,65 @@ main .imagesDragonBall .carousel .carousel-inner .carousel-item img{
 }
 
 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    background: white;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
 
 
+#personagens{
+    display: flex;
+    max-width: 80%;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color:var(--primary-color);
+    justify-content: center;
+   
+}
+#personagens  div{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    align-items: center;
+    border-radius: 10px;
+    width: 300px;
+    
+    
+    
+}
 
+#personagens  div:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 10px black;
+    position: relative;
+    right:3px;
+    bottom: 3px;
+}
 
-
-
-
+#personagens div img{
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+}
 
 
 
