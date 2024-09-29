@@ -22,20 +22,32 @@
 header{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: var(--secondary-color);
     align-items: center;
-    padding: 20px;
-    width: 100%;
+    width: 100vw;
+    padding: 30px 50px;
+    
 }
+
+ header img{
+        width: 100%;
+        
+    }
 
 header nav ul {
     display: flex;
     list-style: none;
+    text-align: center;
 }
 
+@media screen and (max-width:715px) {
+    header nav ul{
+        flex-direction: column;
+        
+    } 
+ }
 header nav ul li{
-gap: 200px;
+margin: 20px 0px;
 
 }
 header nav ul li a{
@@ -58,18 +70,32 @@ main{
     background-color: var(--primary-color);
     color: #474343;
     width: 100%;
+    padding: 40px;
 }
 main .sobreAnime-h2{
     color: var(--tertiary-color);
     font-size: 2rem;
+    font-weight: bold;
+
 }
+
+@media screen and (max-width:715px) {
+    main .sobreAnime-h2{
+        text-align: center;
+    }
+}
+
 main .SobreAnime{
 display: flex;
 flex-direction: column;
 gap: 20px;
-width: 50%;
+width: 60%;
 margin: auto;
 padding: 30px;
+
+
+
+
 
 }
 
@@ -81,6 +107,8 @@ main .imagesDragonBall .carousel .carousel-inner .carousel-item img{
     border-radius: 20px;
     width: 90%;
     height: 90%;
+   
+    
 }
 
 
@@ -125,6 +153,7 @@ body {
     align-items: center;
     border-radius: 10px;
     width: 300px;
+
     
     
     
@@ -142,11 +171,27 @@ body {
     width: 250px;
     height: 350px;
     padding: 20px;
+    
+}
+
+
+#visualizarPersonagens{
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px;
+    font-size: 2rem;
+    
 }
 
 
 
+footer{
 
-
-
-
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    align-items: center;
+    width: 100vw;
+    padding: 30px 50px;
+    
+}
