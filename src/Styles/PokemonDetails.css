@@ -1,0 +1,142 @@
+#pokemon-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fredoka", sans-serif;
+  margin-top: 2rem;
+  background-color: rgb(138, 138, 138);
+  width: 80%;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+#details-name {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+#details-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  background-image: url("../Assets/pokedex.png");
+  background-size: 80% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 100vh;
+  background-color: rgb(138, 138, 138);
+}
+
+#details-img img {
+  padding-left: 18%;
+  padding-bottom: 7%;
+  width: 20%;
+}
+
+#details-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#details-types div span {
+  padding: 1rem;
+  margin: 1rem;
+  list-style-type: none;
+  background-color: rgb(206, 206, 206);
+  border-radius: 20%;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+
+#details-abilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#details-abilities div span {
+  padding: 1rem;
+  margin: 1rem;
+  list-style-type: none;
+  background-color: rgb(206, 206, 206);
+  border-radius: 20%;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+}
+
+#details-stats {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+#details-stats div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+
+#details-stats ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+#details-stats ul li {
+  padding: 1rem;
+  margin: 1rem;
+  list-style-type: none;
+  background-color: rgb(206, 206, 206);
+  border-radius: 20%;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+#details-moves {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#details-moves div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#details-moves div p {
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+#details-moves ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#details-moves ul li {
+  padding: 1rem;
+  margin: 1rem;
+  list-style-type: none;
+  font-weight: bold;
+  background-color: rgb(206, 206, 206);
+  border-radius: 20%;
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.25);
+}

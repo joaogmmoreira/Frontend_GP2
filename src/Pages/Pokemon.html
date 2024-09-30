@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon</title>
+  <link rel="stylesheet" href="../Styles/Pokemon.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main id="main-pokemon">
+    <div id="pokemon-title">
+      <img src="../Assets/pokemon-logo.svg" alt="Pokemon" />
+    </div>
+    <div id="search">
+      <input type="text" id="search-input" placeholder="Search Pokemon" />
+      <button id="search-button">Search</button>
+    </div>
+    <div id="search-results"></div>
+    <div id="pokemon-list"></div>
+    <div class="pagination">
+      <button class="btns" id="previous">Previous</button>
+      <button class="btns" id="next">Next</button>
+    </div>
+  </main>
+</body>
+<script type="module" src="../Scripts/Pokemon.mjs"></script>
+
+</html>
