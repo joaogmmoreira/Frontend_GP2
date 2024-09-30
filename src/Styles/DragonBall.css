@@ -248,10 +248,9 @@ footer {
 
 
  #nuvemVoadora{
-    width: 10%;
+    width: 30%;
     display: inline-block;
     display: inline-block;
-    animation-name: moverNuvem;
     animation-iteration-count: infinite;
     animation-duration: 8s;
 }
@@ -261,12 +260,12 @@ footer {
 @keyframes moverNuvem {
     0% {
         position: absolute;
-        left: 100%;
+        left: 100vw;
     }
 
     100% {
         position: absolute;
-        left: -10%;
+        left: -40vw;
     }
 
 }
@@ -278,4 +277,13 @@ footer {
         font-size: 1rem;
         overflow: auto;
     }
+}
+
+#nuvemContainer{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    animation-name: moverNuvem;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
 }
