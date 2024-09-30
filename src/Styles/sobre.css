@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    background-color:#ffffff;
+    /* background: linear-gradient(to right, #f9edaa, #ffca8e); */
+    color: #484848;
+    /* padding: 100px; */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.navbar {
+    background-color:#f9edaa;
+    /* background: linear-gradient(to right, #ffca8e, #f9edaa); */
+    height: 8rem;
+    /* padding: 10px 0; */
+}
+
+.navbar h1 {
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #484848;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #e57e09;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #484848;
+}
+
+p {
+    font-size: 1.2em;
+    color: #484848;
+}
+
+.team {
+    text-align: center;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 5% 20%;
+}
+
+.profile {
+    background-color: #ffffff;
+    /* background-color: #eeeeee; */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px #e57e09;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    /* cursor: pointer; */
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.profile h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #e57e09;
+}
+
+.profile p {
+    font-size: 1em;
+    color: #484848;
+}
+
+.footer {
+    background-color: #f9edaa;
+    /* background: linear-gradient(to right, #ffca8e, #f9edaa); */
+    padding: 20px;
+    height: 7.5rem;
+}
