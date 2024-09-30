@@ -18,6 +18,7 @@
 }
 
 
+
 header {
     display: flex;
     flex-direction: column;
@@ -32,9 +33,10 @@ header {
 
 }
 
+
 header img {
     position: relative;
-    top: 15%;
+    top: 10%;
     width: 80%;
 
 }
@@ -58,32 +60,43 @@ header nav ul {
 
 header nav ul {
     margin: 20px 0px;
-
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:30px;
+   
 }
+
 
 header nav ul li a {
-    color: #fff;
+    display: inline-block;
+    color:#fff;
     text-decoration: none;
     font-weight: bold;
-    background-color: var(--tertiary-color);
-    margin-left: 20px;
-    padding: 10px;
     border-radius: 10px;
+    display:inline-block;
+    padding: 20px;
+    
+    
+
 }
 
-header nav ul li a:hover {
-    opacity: .7;
+
+header nav ul li a:hover{
+    background-color: var(--tertiary-color);
+    color: #fff;
 }
+
 
 @keyframes moverGoku {
-    from {
+    0% {
         position: absolute;
-        left: 1800px;
+        left: 100%;
     }
 
-    to {
+    100% {
         position: absolute;
-        left: -300px;
+        left: -30%;
     }
 
 }
@@ -233,6 +246,7 @@ footer {
 
 }
 
+
  #nuvemVoadora{
     width: 10%;
     display: inline-block;
@@ -242,15 +256,26 @@ footer {
     animation-duration: 11s;
 }
 
+
+
 @keyframes moverNuvem {
-    from {
+    0% {
         position: absolute;
-        left: 2000px;
+        left: 100%;
     }
 
-    to {
+    100% {
         position: absolute;
-        left: -300px;
+        left: -30%;
     }
 
+}
+
+@media screen and (max-width:700px) {
+    footer{
+        background-size: cover;
+        width: 100vw;
+        font-size: 1rem;
+        overflow: auto;
+    }
 }
