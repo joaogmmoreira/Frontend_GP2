@@ -1,9 +1,9 @@
-:root{
-    --primary-color:#fbb503;
-    --secondary-color:#7878f7;
-    --tertiary-color:#ff0000;
-    
-    
+:root {
+    --primary-color: #fbb503;
+    --secondary-color: #7878f7;
+    --tertiary-color: #ff0000;
+
+
 }
 
 
@@ -19,20 +19,20 @@
 }
 
 
-header{
+header {
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-color);
     align-items: center;
     width: 100vw;
     padding: 30px 50px;
-    
+
 }
 
- header img{
-        width: 100%;
-        
-    }
+header img {
+    width: 100%;
+
+}
 
 header nav ul {
     display: flex;
@@ -41,17 +41,19 @@ header nav ul {
 }
 
 @media screen and (max-width:715px) {
-    header nav ul{
+    header nav ul {
         flex-direction: column;
-        
-    } 
- }
-header nav ul li{
-margin: 20px 0px;
+
+    }
+}
+
+header nav ul {
+    margin: 20px 0px;
 
 }
-header nav ul li a{
-    color:#fff;
+
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     background-color: var(--tertiary-color);
@@ -60,19 +62,20 @@ header nav ul li a{
     border-radius: 10px;
 }
 
-header nav ul li a:hover{
-    background-color: #985c60;
+header nav ul li a:hover {
+    opacity: .7;
 }
 
 
 
-main{
+main {
     background-color: var(--primary-color);
     color: #474343;
     width: 100%;
     padding: 40px;
 }
-main .sobreAnime-h2{
+
+main .sobreAnime-h2 {
     color: var(--tertiary-color);
     font-size: 2rem;
     font-weight: bold;
@@ -80,18 +83,18 @@ main .sobreAnime-h2{
 }
 
 @media screen and (max-width:715px) {
-    main .sobreAnime-h2{
+    main .sobreAnime-h2 {
         text-align: center;
     }
 }
 
-main .SobreAnime{
-display: flex;
-flex-direction: column;
-gap: 20px;
-width: 60%;
-margin: auto;
-padding: 30px;
+main .SobreAnime {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
 
 
 
@@ -99,16 +102,17 @@ padding: 30px;
 
 }
 
-main .imagesDragonBall{
+main .imagesDragonBall {
     width: 100%;
     height: 100%;
 }
-main .imagesDragonBall .carousel .carousel-inner .carousel-item img{
+
+main .imagesDragonBall .carousel .carousel-inner .carousel-item img {
     border-radius: 20px;
     width: 90%;
     height: 90%;
-   
-    
+
+
 }
 
 
@@ -118,6 +122,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 .card {
@@ -136,17 +141,18 @@ body {
 }
 
 
-#personagens{
+#personagens {
     display: flex;
     max-width: 80%;
     gap: 15px;
     flex-wrap: wrap;
     margin: auto;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     justify-content: center;
-   
+
 }
-#personagens  div{
+
+#personagens div {
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-color);
@@ -154,44 +160,111 @@ body {
     border-radius: 10px;
     width: 300px;
 
-    
-    
-    
+
+
+
 }
 
-#personagens  div:hover{
+#personagens div:hover {
     cursor: pointer;
     box-shadow: 10px 10px 10px black;
     position: relative;
-    right:3px;
+    right: 3px;
     bottom: 3px;
 }
 
-#personagens div img{
+#personagens div img {
     width: 250px;
     height: 350px;
     padding: 20px;
-    
+
 }
 
 
-#visualizarPersonagens{
+#visualizarPersonagens {
     background-color: #ff0000;
     color: #fff;
     padding: 20px;
     font-size: 2rem;
-    
+
+}
+
+@keyframes moverGoku {
+    from {
+        position: absolute;
+        left: 1900px
+    }
+
+    to {
+        position: absolute;
+        left: -300px
+    }
+
 }
 
 
+@keyframes moverNuvem {
+    from {
+        position: absolute;
+        left: 1900px
+    }
 
-footer{
+    to {
+        position: absolute;
+        left: -300px
+    }
+
+}
+
+@keyframes moverBills {
+    from {
+        position: absolute;
+        left: 1900px
+    }
+
+    to {
+        position: absolute;
+        left: -300px
+    }
+
+}
+
+
+footer {
 
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary-color);
-    align-items: center;
+    background-image: url("../images/cel-azul.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
     width: 100vw;
+    height: 400px;
     padding: 30px 50px;
-    
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+
+
+}
+
+footer #gokuNoDragao{
+    width: 100px;
+    display: inline-block;
+    animation-name: moverGoku;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+
+
+}
+
+footer #nuvemVoadora{
+    width: 100px;
+    display: inline-block;
+}
+
+footer #Bills{
+    width: 100px;
+    display: inline-block;
 }
