@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/anime3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    margin: 0;
+    
+}
+
+h1{
+    padding-left:100px;
+
+}
+
+header {
+    background-color: rgb(150, 147, 147);
+    color: #fff;
+    padding: 1px;
+    height: 52px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(238, 238, 107) ;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+.contato {
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    color:rgb(7, 6, 6);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:rgb(3, 3, 3);
+}
+
+h2{
+    font-size: 50px;
+}
+
+form{
+    font-size: 20px;
+}
+.contato form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contato form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contato form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #020202;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #020202;
+    border-radius: 5px;
+}
+
+.contato form button {
+    padding: 10px 20px;
+    background-color: rgb(14, 13, 13);
+    color: #ebe5e5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: dimgrey;
+    color:rgb(238, 238, 107);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+}
+
+.Github a img {
+    width: 30px;
+    margin: 5px 5px;
+    
+ 
+    
+}
+
