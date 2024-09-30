@@ -3,7 +3,6 @@
     --secondary-color: #7878f7;
     --tertiary-color: #ff0000;
 
-
 }
 
 
@@ -22,15 +21,21 @@
 header {
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary-color);
+    background-image: url("../images/cel-azul.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     align-items: center;
+    justify-content: space-between;
     width: 100vw;
-    padding: 30px 50px;
+    height: 100vh;
+    position: relative;
 
 }
 
 header img {
-    width: 100%;
+    position: relative;
+    top: 15%;
+    width: 80%;
 
 }
 
@@ -38,11 +43,15 @@ header nav ul {
     display: flex;
     list-style: none;
     text-align: center;
+    
+    
 }
 
 @media screen and (max-width:715px) {
     header nav ul {
         flex-direction: column;
+        gap: 20px;
+
 
     }
 }
@@ -66,7 +75,29 @@ header nav ul li a:hover {
     opacity: .7;
 }
 
+@keyframes moverGoku {
+    from {
+        position: absolute;
+        left: 1800px;
+    }
 
+    to {
+        position: absolute;
+        left: -300px;
+    }
+
+}
+
+
+#gokuNoDragao{
+    width: 10%;
+    display: inline-block;
+    animation-name: moverGoku;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+
+
+}
 
 main {
     background-color: var(--primary-color);
@@ -95,10 +126,6 @@ main .SobreAnime {
     width: 60%;
     margin: auto;
     padding: 30px;
-
-
-
-
 
 }
 
@@ -160,9 +187,6 @@ body {
     border-radius: 10px;
     width: 300px;
 
-
-
-
 }
 
 #personagens div:hover {
@@ -189,47 +213,6 @@ body {
 
 }
 
-@keyframes moverGoku {
-    from {
-        position: absolute;
-        left: 1900px
-    }
-
-    to {
-        position: absolute;
-        left: -300px
-    }
-
-}
-
-
-@keyframes moverNuvem {
-    from {
-        position: absolute;
-        left: 1900px
-    }
-
-    to {
-        position: absolute;
-        left: -300px
-    }
-
-}
-
-@keyframes moverBills {
-    from {
-        position: absolute;
-        left: 1900px
-    }
-
-    to {
-        position: absolute;
-        left: -300px
-    }
-
-}
-
-
 footer {
 
     display: flex;
@@ -237,34 +220,37 @@ footer {
     background-image: url("../images/cel-azul.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     text-align: center;
     width: 100vw;
-    height: 400px;
+    height: 30vh;
     padding: 30px 50px;
     color: #000;
     font-size: 2rem;
     font-weight: bold;
+    position: relative;
 
 
 }
 
-footer #gokuNoDragao{
-    width: 100px;
+ #nuvemVoadora{
+    width: 10%;
     display: inline-block;
-    animation-name: moverGoku;
+    display: inline-block;
+    animation-name: moverNuvem;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
-
-
+    animation-duration: 11s;
 }
 
-footer #nuvemVoadora{
-    width: 100px;
-    display: inline-block;
-}
+@keyframes moverNuvem {
+    from {
+        position: absolute;
+        left: 2000px;
+    }
 
-footer #Bills{
-    width: 100px;
-    display: inline-block;
+    to {
+        position: absolute;
+        left: -300px;
+    }
+
 }
