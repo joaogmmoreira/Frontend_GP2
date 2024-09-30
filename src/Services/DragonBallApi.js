@@ -11,3 +11,7 @@ export async function getCharacters() {
     console.error("Error fetching data: ", error);
   }
 }
+
+window.onload = () => {
+  getCharacters();
+}
