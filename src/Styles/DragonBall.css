@@ -253,7 +253,7 @@ footer {
     display: inline-block;
     animation-name: moverNuvem;
     animation-iteration-count: infinite;
-    animation-duration: 11s;
+    animation-duration: 8s;
 }
 
 
@@ -266,7 +266,7 @@ footer {
 
     100% {
         position: absolute;
-        left: -30%;
+        left: -10%;
     }
 
 }
