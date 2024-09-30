@@ -1,46 +1,53 @@
 import { getAnime } from "../Services/kitsuApi.js"
 
-
-let formBuscarAnime = document.getElementById('buscarAnime')
-let inputBuscarAnime = document.getElementById('input-search')
-let containerAnimes = document.getElementById('container-animes')
+let formBuscarAnime = document.getElementById('buscar-anime')
+let inputBuscarAnime = document.getElementById('input-busca')
 
 async function listarAnimes() {
-    let busca = document.getElementById('input-search').value
+    let busca = document.getElementById('input-busca').value;
 
     if (busca) {
-        containerAnimes.textContent = '';
+        let listaAnimes = await getAnime(busca);
+        let container = document.getElementById('container-animes');
 
-        let listaAnimes = await getAnime(busca)
-
-        let ul = document.createElement('ul')
-        ul.id = 'listaAnimes'
-        containerAnimes.appendChild(ul)
+        container.innerHTML = '';
 
         listaAnimes.forEach(anime => {
-            let animeNome = document.createElement('li')
-            let animeLink = document.createElement('a')
-            let animeImg = document.createElement('img')
-            let animeSinopse = document.createElement('p')
+            if (anime.streamLink) {
+                let card = document.createElement('div');
+                card.className = 'anime-card';
 
-            animeNome.className = 'anime_nome'
-            animeImg.className = 'anime_img'
-            animeSinopse.className = 'anime_sinopse'
-            animeLink.className = 'anime_link'
+                let animeImg = document.createElement('img');
+                animeImg.src = anime.attributes.posterImage.small;
+                card.appendChild(animeImg);
 
-            animeNome.textContent = anime.attributes.titles.en ?? anime.attributes.titles.en_jp
-            animeImg.src = anime.attributes.posterImage.tiny
-            animeSinopse.textContent = anime.attributes.synopsis
-            animeLink.href = anime.streamLink ?? ''
-            animeLink.target = 'blank'
-            ul.appendChild(animeNome)
-            ul.appendChild(animeLink)
-            animeLink.appendChild(animeImg)
-            ul.appendChild(animeSinopse)
+                let cardBody = document.createElement('div');
+                cardBody.className = 'anime-card-body';
 
+                let animeTitle = document.createElement('h5');
+                animeTitle.className = 'anime-card-title';
+                animeTitle.textContent = anime.attributes.titles.en ?? anime.attributes.titles.en_jp;
+                cardBody.appendChild(animeTitle);
+
+                let animeSynopsis = document.createElement('p');
+                animeSynopsis.className = 'anime-card-synopsis';
+                animeSynopsis.textContent = anime.attributes.synopsis;
+                cardBody.appendChild(animeSynopsis);
+
+                let animeLink = document.createElement('a');
+                animeLink.className = 'anime-card-link';
+                animeLink.href = anime.streamLink;
+                animeLink.target = '_blank';
+                animeLink.textContent = 'Assistir';
+
+                cardBody.appendChild(animeLink);
+                card.appendChild(cardBody);
+                container.appendChild(card);
+            }
         });
     }
 }
+
 
 inputBuscarAnime.addEventListener('keydown', async (e) => {
     if (e.key === 'Enter') {
