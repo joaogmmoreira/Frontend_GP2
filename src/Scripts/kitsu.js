@@ -2,15 +2,20 @@ import { getAnime } from "../Services/kitsuApi.js"
 
 let formBuscarAnime = document.getElementById('buscar-anime')
 let inputBuscarAnime = document.getElementById('input-busca')
+let containerMain = document.getElementById('container-main')
+
 
 async function listarAnimes() {
     let busca = document.getElementById('input-busca').value;
 
     if (busca) {
+
         let listaAnimes = await getAnime(busca);
         let container = document.getElementById('container-animes');
 
+        inputBuscarAnime.value = '';
         container.innerHTML = '';
+
 
         listaAnimes.forEach(anime => {
             if (anime.streamLink) {
@@ -53,10 +58,13 @@ inputBuscarAnime.addEventListener('keydown', async (e) => {
     if (e.key === 'Enter') {
         e.preventDefault()
         await listarAnimes()
+        containerMain.classList.remove('center-content')
     }
 })
 
 formBuscarAnime.addEventListener('submit', async (e) => {
     e.preventDefault()
     await listarAnimes()
+    containerMain.classList.remove('center-content')
+
 })

@@ -30,7 +30,6 @@ export async function getAnime(nomeAnime) {
 
                     if (dados[0].attributes.url.includes('http')) {
                         anime.streamLink = dados[0].attributes.url
-                        console.log(anime.streamLink)
                     }
                 }
             } catch (error) {
