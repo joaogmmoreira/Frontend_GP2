@@ -8,13 +8,16 @@ body {
 
 header {
     background-color: #fc6d0f;
-    height: 7vh;
+    height: 11vh;
 }
 
-nav {
-    padding: 1vh;
+.nav-link {
+    display: block;
+    padding: 4vh;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
-
 
 #container-main {
     min-height: calc(100vh - 120px);
