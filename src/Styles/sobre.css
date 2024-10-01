@@ -6,7 +6,7 @@
 
 body {
     font-family: "Merriweather", serif;
-    background-color:#f8d561;
+    background-color: #f8d561;
     /* background: linear-gradient(to right, #f9edaa, #ffca8e); */
     color: #484848;
     /* padding: 100px; */
@@ -23,7 +23,7 @@ body {
 }
 
 .navbar {
-    background-color:#fa511d;
+    background-color: #fa511d;
     /* background: linear-gradient(to right, #ffca8e, #f9edaa); */
     height: 8rem;
     /* padding: 10px 0; */

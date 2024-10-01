@@ -21,7 +21,7 @@ h1 {
 }
 
 header {
-    background-color: rgb(150, 147, 147);
+    background-color: #fd6500;
     color: #fff;
     padding: 1px;
     height: 52px;
@@ -39,7 +39,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(238, 238, 107);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -98,19 +98,19 @@ textarea {
 
 .contato form button {
     padding: 10px 20px;
-    background-color: rgb(14, 13, 13);
-    color: #ebe5e5;
+    background-color: #f8f8f8;
+    color: #000000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 footer {
-    background-color: dimgrey;
-    color: rgb(238, 238, 107);
+    background-color: #fd6500;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -120,7 +120,4 @@ footer {
 .Github a img {
     width: 30px;
     margin: 5px 5px;
-
-
-
 }

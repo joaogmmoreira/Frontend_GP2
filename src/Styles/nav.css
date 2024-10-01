@@ -8,10 +8,10 @@ nav {
 }
 
 #navbar {
-   width: 100%; 
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #nav_logo {
@@ -31,12 +31,12 @@ nav {
 
 .nav-item a {
     text-decoration: none;
-    color:black;
+    color: black;
     font-weight: 600;
 }
 
-.nav-item.active a { /* barra que fica em baixo da palavra de navegação*/
+.nav-item.active a {
+    /* barra que fica em baixo da palavra de navegação*/
     color: black;
     border-bottom: 3px solid #000000;
 }
-

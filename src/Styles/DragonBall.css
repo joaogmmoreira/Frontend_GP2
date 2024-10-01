@@ -84,7 +84,7 @@ header nav ul li a:hover {
   }
 }
 
-header nav + img {
+header nav+img {
   width: 10%;
   display: inline-block;
   animation-name: moverGoku;
@@ -218,7 +218,7 @@ footer {
   position: relative;
 }
 
-footer div > img {
+footer div>img {
   width: 30%;
   display: inline-block;
   display: inline-block;
