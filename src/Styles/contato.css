@@ -107,7 +107,7 @@ textarea {
 
 footer {
     background-color: #fd6500;
-    color: rgb(255, 255, 255);
+    color:black;
     text-align: center;
     padding: 20px;
     position: fixed;
@@ -115,8 +115,13 @@ footer {
     width: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 17px;
+    
+   
 }
-
+footer p a {
+    text-decoration: none;
+    color: black ;
+}
 .Github a img {
     width: 30px;
     margin: 5px 5px;
