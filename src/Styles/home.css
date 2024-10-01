@@ -73,9 +73,3 @@
         align-items: center;
     }
 }
-
-@media screen and (max-width: 450px) {
-    #phone_button button {
-        display: none;
-    }
-}
