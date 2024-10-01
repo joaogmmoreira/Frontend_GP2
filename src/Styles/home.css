@@ -1,0 +1,51 @@
+/*css do começo da pagina*/
+
+#home {
+    display: flex;
+    min-height: calc(100vh - 90px);
+}
+
+#inicio {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#inicio .title {
+    font-size: 4rem;
+    color: black;
+}
+
+#inicio .title span {
+    font-size: 4rem;
+    color: rgb(255, 75, 21);
+}
+
+#inicio .descricao {
+    font-size: 1.2 rem;
+}
+
+#inicio_botao {
+    display: flex;
+    gap: 24px;
+}
+
+#inicio_botao a {
+    text-decoration: none;
+    color: black;
+}
+
+#imagem {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+}
+
+#imagem .img {
+    height: 100%;
+    width: fit-content;
+}
+
