@@ -49,6 +49,13 @@
     width: fit-content;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 1170px) {
     #home {
         min-height: 100%;
