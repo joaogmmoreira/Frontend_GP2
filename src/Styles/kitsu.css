@@ -3,11 +3,11 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(23, 22, 22);
+    background-color: #f8d561;
 }
 
 header {
-    background-color: gray;
+    background-color: #fc6d0f;
     height: 7vh;
 }
 
@@ -19,15 +19,6 @@ nav {
 #container-main {
     min-height: calc(100vh - 120px);
     transition: all 0.5s ease;
-}
-
-#container-footer {
-    text-align: center;
-    width: 100%;
-    background-color: #f8f9fa;
-    position: relative;
-    bottom: 0;
-    height: 7vh;
 }
 
 .center-content {
@@ -106,6 +97,7 @@ nav {
     background-color: #0056b3;
     color: white;
 }
+
 
 @media (min-width: 768px) {
     .center-content .input-group {
