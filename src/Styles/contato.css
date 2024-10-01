@@ -6,17 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../img/anime3.png');
+    background-image: url('../imagens/anime3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; 
+    height: 100vh;
     margin: 0;
-    
+
 }
 
-h1{
-    padding-left:100px;
+h1 {
+    padding-left: 100px;
 
 }
 
@@ -39,7 +39,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(238, 238, 107) ;
+    color: rgb(238, 238, 107);
     text-decoration: none;
 }
 
@@ -50,23 +50,25 @@ nav ul li a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
 }
+
 .contato {
     padding: 40px 20px;
     text-align: center;
     margin-bottom: 60px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    color:rgb(7, 6, 6);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(7, 6, 6);
     -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color:rgb(3, 3, 3);
+    -webkit-text-stroke-color: rgb(3, 3, 3);
 }
 
-h2{
+h2 {
     font-size: 50px;
 }
 
-form{
+form {
     font-size: 20px;
 }
+
 .contato form {
     max-width: 400px;
     margin: 0 auto;
@@ -105,21 +107,20 @@ textarea {
 
 footer {
     background-color: dimgrey;
-    color:rgb(238, 238, 107);
+    color: rgb(238, 238, 107);
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 17px;
 }
 
 .Github a img {
     width: 30px;
     margin: 5px 5px;
-    
- 
-    
-}
 
+
+
+}
