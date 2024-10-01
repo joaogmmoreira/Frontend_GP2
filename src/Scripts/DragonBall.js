@@ -17,8 +17,6 @@ exibirBtn.addEventListener("click", () => {
 })
 
 
-
-
 function criarCardsPersonagens(personagem) {
 
     let div = document.createElement("div");
@@ -32,10 +30,7 @@ function criarCardsPersonagens(personagem) {
     ki: ${personagem.ki}
     raça ${personagem.race}`
     div.append(img, h3, p)
-
-
     document.getElementById("personagens").appendChild(div)
-
 
 }
 
