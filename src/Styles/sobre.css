@@ -6,7 +6,7 @@
 
 body {
     font-family: "Merriweather", serif;
-    background-color:#ffffff;
+    background-color:#f8d561;
     /* background: linear-gradient(to right, #f9edaa, #ffca8e); */
     color: #484848;
     /* padding: 100px; */
@@ -23,7 +23,7 @@ body {
 }
 
 .navbar {
-    background-color:#f9edaa;
+    background-color:#ff4b15;
     /* background: linear-gradient(to right, #ffca8e, #f9edaa); */
     height: 8rem;
     /* padding: 10px 0; */
@@ -123,11 +123,4 @@ p {
 .profile p {
     font-size: 1em;
     color: #484848;
-}
-
-.footer {
-    background-color: #f9edaa;
-    /* background: linear-gradient(to right, #ffca8e, #f9edaa); */
-    padding: 20px;
-    height: 7.5rem;
 }
