@@ -1,14 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--importando os css-->
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/nav.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/menu.css">
+    <!--nome da página-->
+    <title>Home-Serratec Animes</title>
 </head>
-
 <body>
+    <header>
+        <nav id="navbar"> <!--barra de navegação-->
+            <i id="nav_logo"> Serratec Animes</i>
 
+            <ul id="nav_list"> <!--lista de navegação-->
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Animes</a>
+                </li>
+            </ul>
+            <button class="btn-default"> <!--botão para contato-->
+                Contato
+            </button>
+        </nav>
+    </header>
+
+    <main id="conteudo"> <!--todo conteudo da pagina-->
+        <section id="home">
+            <div id="inicio"> <!--primeira coisa que vai aparecer na tela-->
+                <h1 class="title">
+                    Anime: a arte de contar
+                    <span>história!</span> <!--Mudar a cor do história-->
+                </h1>
+
+                <p class="descricao">
+                    Bem-vindo(a) ao nosso portal de animes,
+                    onde você encontra tudo sobre suas animações favoritas!
+                </p>
+           
+
+            <div id="inicio_botao">
+                <a href="#" class="btn-default">
+                    Ver animes
+                </a>
+            </div>
+        </div>
+            <div id="imagem"> <!--Imagem que vai aparecer ao lado-->
+                <img src="src/imagem/Home .png" alt="">
+            </div>
+        
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Animes</h2>
+            <h3 class="section-subtitle">Nossos animes especiais</h3>
+
+            <div id="animes">
+                <div class="anime">
+                    <div class="anime_fogo">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+
+                    <img src="src/imagem/sobreLogo.png" class="anime-image" alt="">
+
+                    <h3 class="anime-title">
+                        Sobre
+                        <button class="btn-default">
+                            Acesse aqui
+                        </button>
+                    </h3>
+                </div>
+                
+                <div class="anime">
+                    <div class="anime_fogo">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+
+                    <img src="src/imagem/dragonballLogo.png" class="anime-image" alt="">
+
+                    <h3 class="anime-title">
+                        DragonBall
+                        <button class="btn-default">
+                            Acesse aqui
+                        </button>
+                    </h3>
+                </div>
+
+                <div class="anime">
+                    <div class="anime_fogo">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+
+                    <img src="src/imagem/pockemonLogo.png" class="anime-image" alt="">
+
+                    <h3 class="anime-title">
+                        Pokémon
+                        <button class="btn-default">
+                            Acesse aqui
+                        </button>
+                    </h3>
+                </div>
+
+                <div class="anime">
+                    <div class="anime_fogo">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+
+                    <img src="src/imagem/animesLogo.png" class="anime-image" alt="">
+
+                    <h3 class="anime-title">
+                        Outros animes
+                        <button class="btn-default">
+                            Acesse aqui
+                        </button>
+                    </h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/imagem/wave.svg" alt="">
+    </footer>
 </body>
-
 </html>
+
+
+

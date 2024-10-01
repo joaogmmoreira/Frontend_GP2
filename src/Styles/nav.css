@@ -1,0 +1,42 @@
+/*css da barra de navegação*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+nav {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar {
+   width: 100%; 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#nav_logo {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+}
+
+.nav-item.active a { /* barra que fica em baixo da palavra de navegação*/
+    color: black;
+    border-bottom: 3px solid #000000;
+}
+
