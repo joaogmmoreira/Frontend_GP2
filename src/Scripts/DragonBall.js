@@ -39,6 +39,15 @@ async function pegarPersonagens() {
     let personagens = await resposta.json();
     personagens.items.forEach(criarCardsPersonagens);
 
+
+
+
+    document.querySelectorAll(".personagens").forEach((personagem)=>{
+        personagem.addEventListener("click",(ele)=>{
+            document.createElement("p").innerText = "algo"
+        })
+    })
+
 }
 
 
