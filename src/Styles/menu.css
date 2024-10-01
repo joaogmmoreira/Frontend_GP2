@@ -49,3 +49,24 @@
     align-items: center;
     gap: 20px;
 }
+
+@media screen and (max-width: 1170px) {
+    #animes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .anime {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .anime {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}
