@@ -3,13 +3,14 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-   background-color: #f8d561;  /*cor de fundo da pagina*/
+body {
+    background-color: #f8d561;
+    /*cor de fundo da pagina*/
 }
 
 section {
@@ -28,15 +29,17 @@ section {
     font-weight: 600;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background-color .3s ease; /*a transição de cor quando passar por cima do mouse pra não ficar muito rapida*/
+    transition: background-color .3s ease;
+    /*a transição de cor quando passar por cima do mouse pra não ficar muito rapida*/
 }
 
-.btn-default:hover { /*quando o mouse passar por cima do botão vai mudar a cor*/
-    background-color: rgb(252, 109, 15);
+.btn-default:hover {
+    /*quando o mouse passar por cima do botão vai mudar a cor*/
+    background-color: #fc6d0f;
 }
 
 .section-title {
-    color: rgb(250, 58, 0);
+    color: #fa3a00;
     font-size: 1.763rem;
 }
 
