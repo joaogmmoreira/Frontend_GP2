@@ -109,7 +109,8 @@ video {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative; /* Make #search the positioning context */
+  position: relative;
+  /* Make #search the positioning context */
   width: 100%;
 }
 
@@ -162,7 +163,7 @@ video {
 }
 
 #pokemon-title img {
-  width: 400px;
+  width: 75%;
 }
 
 #pokemon-list {
