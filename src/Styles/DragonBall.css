@@ -17,8 +17,6 @@
 
 }
 
-
-
 header {
     display: flex;
     flex-direction: column;
@@ -105,14 +103,12 @@ header nav ul li a:hover{
 }
 
 
-#gokuNoDragao{
+header nav + img{
     width: 10%;
     display: inline-block;
     animation-name: moverGoku;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-
-
 }
 
 main {
@@ -127,11 +123,9 @@ main {
     
 }
 
-main .sobreAnime-h2{
-   
+main .sobreAnime-h2{ 
     font-size: 2rem;
     font-weight: bold;
-
 }
 
 @media screen and (max-width:715px) {
@@ -147,7 +141,6 @@ main .SobreAnime {
     width: 60%;
     margin: auto;
     padding: 30px;
-
 }
 
 main .imagesDragonBall {
@@ -159,8 +152,6 @@ main .imagesDragonBall .carousel .carousel-inner .carousel-item img {
     border-radius: 20px;
     width: 90%;
     height: 90%;
-
-
 }
 
 
@@ -170,10 +161,8 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     overflow-x: hidden;
-    
+ 
 }
-
-
 
 .card img {
     width: 100%;
@@ -202,8 +191,6 @@ body {
     border-radius: 10px;
     width: 300px;
    
-    
-
 }
 
 #personagens div:hover {
@@ -214,7 +201,7 @@ body {
     bottom: 3px;
 }
 
-#personagens div img {
+.personagens div img {
     width: 250px;
     height: 350px;
     padding: 20px;
@@ -262,7 +249,7 @@ footer {
 }
 
 
- #nuvemVoadora{
+ footer div > img{
     width: 30%;
     display: inline-block;
     display: inline-block;
@@ -294,7 +281,7 @@ footer {
     }
 }
 
-#nuvemContainer{
+footer div{
     width: 800px;
     display: flex;
     align-items: center;
